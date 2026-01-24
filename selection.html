@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo ::selection CSS</title>
+  <style>
+
+    /* Áp dụng cho toàn bộ trang */
+    ::selection {
+      background-color: #facc15;
+      color: #1f2937; 
+    }
+
+    /* Chỉ áp dụng cho đoạn văn */
+    p::selection {
+      background-color: #4f46e5;
+      color: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: #111827;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ví dụ ::selection</h1>
+
+  <p>
+    Đoạn này nằm trong thẻ p
+  </p>
+
+  <div>
+    Đoạn này không nằm trong thẻ p
+  </div>
+</body>
+</html>

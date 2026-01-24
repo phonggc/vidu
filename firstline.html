@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo ::first-line CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      line-height: 1.8;
+    }
+
+    
+    /* Áp dụng cho dòng đầu tiên*/
+    p::first-line {
+      color: #dc2626;        
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Ví dụ ::first-line</h1>
+
+  <p>
+    Đây là dòng đầu tiên của đoạn văn và sẽ được style khác biệt.
+    Những dòng tiếp theo sẽ hiển thị bình thường dù nội dung khá dài
+    để tự động xuống dòng theo chiều rộng màn hình.
+  </p>
+
+</body>
+</html>

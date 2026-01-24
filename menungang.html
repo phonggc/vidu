@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Hoàn Chỉnh - Tin Học 12 ICT</title>
+    <style>
+        /* 1. THIẾT LẬP CHUNG (RESET) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Giúp tính toán kích thước Box Model chính xác */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            line-height: 1.6;
+        }
+
+        /* 2. ĐỊNH DẠNG MENU NGANG */
+        nav {
+            background-color: #2c3e50; /* Màu nền menu */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Đổ bóng nhẹ cho cả thanh menu */
+        }
+
+        nav ul {
+            list-style-type: none; /* Xóa dấu chấm tròn */
+            text-align: center; /* Căn giữa các mục menu */
+        }
+
+        nav ul li {
+            display: inline-block; /* Biến danh sách dọc thành ngang */
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none; /* Xóa gạch chân */
+            font-weight: bold;
+            transition: 0.3s; /* Hiệu ứng mượt mà khi di chuột */
+        }
+
+        /* Hiệu ứng khi di chuột (Hover) */
+        nav ul li a:hover {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        /* 3. ĐỊNH DẠNG TIÊU ĐỀ (CÓ TEXT-SHADOW) */
+        .header-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .header-section h1 {
+            font-size: 40px;
+            color: #2c3e50;
+            /* Hiệu ứng bóng đổ đã học */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+        }
+
+        /* 4. ĐỊNH DẠNG NỘI DUNG (BOX MODEL) */
+        .container {
+            width: 80%;            /* Chiều rộng khối nội dung */
+            margin: 0 auto;        /* Căn giữa khối (Margin Auto) */
+            background-color: white;
+            padding: 30px;         /* Vùng đệm bên trong (Padding) */
+            border-radius: 8px;    /* Bo góc */
+            border: 1px solid #ddd;
+        }
+
+        .content-text {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+            text-align: justify;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Bài học CSS</a></li>
+            <li><a href="#">Thực hành</a></li>
+            <li><a href="#">Dự án</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-section">
+        <h1>Lập trình Web cùng Tin học 12</h1>
+        <p>Học cách làm chủ giao diện với CSS và HTML</p>
+    </div>
+
+    <div class="container">
+        <h2>Giới thiệu bài học</h2>
+        <br>
+        <p class="content-text">
+            Đây là một ví dụ hoàn chỉnh kết hợp các kiến thức về <b>Định dạng văn bản bằng CSS</b>. 
+            Chúng ta đã sử dụng <i>Menu ngang</i> được tạo từ thẻ danh sách, áp dụng <i>Box Model</i> để căn chỉnh khoảng cách, 
+            và sử dụng <i>Text-shadow</i> để làm tiêu đề nổi bật hơn. Việc nắm vững các thuộc tính này giúp bạn có thể tự tay thiết kế 
+            những giao diện web cơ bản nhưng cực kỳ chuyên nghiệp.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 - Bài tập thực hành Tin học 12 - Kết nối tri thức
+    </footer>
+
+</body>
+</html>

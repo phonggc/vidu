@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ẩn hiện hình ảnh</title>
+  <style>
+    img {
+      width: 200px;
+      display: none; /* ẩn mặc định */
+    }
+
+    .box:hover img {
+      display: block; /* hiện khi hover */
+    }
+
+    .box {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Hover vào đây để hiện hình
+    <img src="https://ung-dung.com/images/upanh_online/upanh.png" alt="demo">
+  </div>
+</body>
+</html>

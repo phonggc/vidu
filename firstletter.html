@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Demo ::first-letter CSS</title>
+  <style>
+    body {
+      font-family: serif;
+      padding: 40px;
+      line-height: 1.8;
+    }
+
+
+    /* Style chữ cái đầu tiên */
+    p::first-letter {
+      font-size: 56px;
+      font-weight: bold;
+      color: #4f46e5;
+      float: left;
+      line-height: 1;
+      margin-right: 10px;
+    }
+
+    p {
+      color: #374151;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ví dụ ::first-letter</h1>
+
+  <p>
+    Đây là ví dụ về pseudo-element ::first-letter trong CSS.
+    Chữ cái đầu tiên của đoạn văn được làm to và nổi bật,
+    giống phong cách drop cap thường thấy trong
