@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Ví dụ pseudo-class</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Căn menu sang phải */
+    nav {
+        text-align: right;
+    }
+
+
+/* Menu nằm ngang */
+    li {
+        display: inline;
+        border: 1px solid blue;
+        background-color: lime;
+        padding: 8px 12px;
+        margin: 5px;
+    }
+
+
+/* Hover link */
+    a:hover {
+        color: red;
+        background-color: cyan;
+    }
+
+
+/* Ẩn ảnh mặc định */
+    img {
+        display: none;
+        margin-top: 20px;
+    }
+
+/* Khi thẻ .img đang active → hiện ảnh phía sau */
+    .img:active + img {
+        display: block;
+    }
+    
+</style>
+</head>
+<body>
+
+
+<nav>
+<ul>
+<li><a href="#" class="img">Trang chủ</a></li>
+<li><a href="#">Giới thiệu</a></li>
+<li><a href="#">Liên hệ</a></li>
+</ul>
+</nav>
+
+
+<br><br>
+
+
+<!-- icon liên kết -->
+<a href="#" class="img">🔗 Bấm giữ vào đây</a>
+<!-- ảnh sẽ hiện khi active -->
+<img src="https://picsum.photos/250" alt="ảnh demo">
+
+
+</body>
+</html>
