@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 14 - Định dạng văn bản bằng CSS</title>
+
+    <!-- CSS đặt trong thẻ style -->
+    <style>
+
+        /* 1. Định dạng chung cho toàn trang */
+        body {
+            font-family: serif;
+            font-size: 16px;
+            color: black;
+            line-height: 1.6;
+        }
+
+        /* 2. Định dạng tiêu đề */
+        h1 {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            font-size: 16px;
+            color: blue;
+            text-align: left;
+        }
+
+        /* 3. Định dạng đoạn văn */
+        p {
+            text-indent: 2em;
+            text-align: justify;
+        }
+
+        /* 4. Định dạng danh sách */
+        ul {
+            margin-left: 40px;
+        }
+
+        li {
+            font-style: italic;
+        }
+
+        /* 5. In đậm và in nghiêng */
+        strong {
+            font-weight: bold;
+            color: darkred;
+        }
+
+        em {
+            font-style: italic;
+            color: green;
+        }
+
+        /* 6. Ví dụ tính kế thừa */
+        .box {
+            color: purple;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        /* 7. Ví dụ cascading */
+        p {
+            color: black;
+        }
+
+        p {
+            color: darkslategray;
+        }
+
+        /* 8. Ví dụ dấu * */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 9. Ví dụ !important */
+        .important-text {
+            color: red !important;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Kĩ thuật chia để trị</h1>
+
+    <h2>1. Khái niệm</h2>
+
+    <p>
+        <em>Kĩ thuật chia để trị</em> là một phương pháp quan trọng trong tin học.
+        Ý tưởng chính của kĩ thuật này là <strong>chia bài toán lớn thành các bài toán nhỏ hơn</strong>,
+        giải từng bài toán con rồi kết hợp kết quả để giải bài toán ban đầu.
+    </p>
+
+    <h2>2. Ứng dụng</h2>
+
+    <p>
+        Kĩ thuật chia để trị thường được áp dụng trong nhiều bài toán thực tế,
+        đặc biệt là các bài toán liên quan đến thuật toán.
+    </p>
+
+    <ul>
+        <li>Thuật toán sắp xếp</li>
+        <li>Thuật toán tìm kiếm</li>
+        <li>Các bài toán tối ưu</li>
+    </ul>
+
+    <div class="box">
+        <p>
+            Đoạn văn này nằm trong thẻ div có class <strong>box</strong>,
+            nên sẽ <em>kế thừa màu chữ tím</em> từ phần tử cha.
+        </p>
+
+        <p class="important-text">
+            Đoạn văn này có thuộc tính <strong>!important</strong> nên
+            màu đỏ sẽ được ưu tiên cao nhất.
+        </p>
+    </div>
+
+</body>
+</html>
