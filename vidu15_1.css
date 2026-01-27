@@ -1,0 +1,91 @@
+/* ============================= */
+/* ============================= */
+
+
+/* color và font-family CÓ kế thừa */
+.container {
+font-family: Arial, sans-serif;
+color: #333;
+padding: 24px;
+}
+
+
+/* ============================= */
+/* 2. CARD DEMO – BORDER GIẢ LẬP KẾ THỪA */
+/* ============================= */
+
+
+.card {
+color: hsl(210, 70%, 40%); /* Màu chữ riêng */
+border: 3px solid currentColor; /* Viền theo màu chữ */
+padding: 16px;
+border-radius: 10px;
+margin: 20px 0;
+
+
+transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Hover: chỉ đổi color, viền tự đổi theo */
+.card:hover {
+color: hsl(340, 70%, 45%);
+}
+
+
+/* ============================= */
+/* 3. SELECTOR HẬU DUỆ (E F) */
+/* ============================= */
+
+
+/* Tất cả p nằm trong .card */
+.card p {
+color: hsl(210, 60%, 35%);
+}
+
+
+/* ============================= */
+/* 4. SELECTOR CON TRỰC TIẾP (E > F) */
+/* ============================= */
+
+
+/* Chỉ h2 là con trực tiếp của .card */
+.card > h2 {
+margin-top: 0;
+border-bottom: 2px solid currentColor;
+padding-bottom: 6px;
+}
+
+
+/* ============================= */
+/* 5. SELECTOR LIỀN KỀ (E + F) */
+/* ============================= */
+
+
+/* p đứng ngay sau h1 */
+h1 + p {
+color: hsl(120, 60%, 35%);
+font-style: italic;
+}
+
+
+/* ============================= */
+/* 6. SELECTOR CÙNG CẤP (E ~ F) */
+/* ============================= */
+
+
+/* Tất cả p cùng cấp đứng sau h2 */
+h2 ~ p {
+color: hsl(30, 80%, 45%);
+}
+
+
+/* ============================= */
+/* 7. PHẦN TỬ NẰM SÂU HƠN */
+/* ============================= */
+
+
+.box p {
+background-color: hsl(210, 70%, 95%);
+padding: 6px;
+}

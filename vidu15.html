@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+/* ============================= */
+/* 1. TÍNH KẾ THỪA (INHERITANCE) */
+/* ============================= */
+
+/* color và font-family có tính kế thừa */
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* ============================= */
+/* 2. SELECTOR HẬU DUỆ (E F) */
+/* ============================= */
+
+/* Chọn TẤT CẢ thẻ p nằm trong .content */
+.content p {
+  color: hsl(210, 70%, 40%);
+}
+
+/* ============================= */
+/* 3. SELECTOR CON TRỰC TIẾP (E > F) */
+/* ============================= */
+
+/* Chỉ chọn h2 là CON TRỰC TIẾP của .content */
+.content > h2 {
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 4px;
+}
+
+/* ============================= */
+/* 4. SELECTOR LIỀN KỀ (E + F) */
+/* ============================= */
+
+/* Chọn p đứng NGAY SAU h1 */
+h1 + p {
+  color: hsl(120, 60%, 35%);
+  font-style: italic;
+}
+
+/* ============================= */
+/* 5. SELECTOR CÙNG CẤP (E ~ F) */
+/* ============================= */
+
+/* Chọn TẤT CẢ p cùng cấp đứng SAU h2 */
+h2 ~ p {
+  color: hsl(30, 80%, 45%);
+}
+
+/* ============================= */
+/* 6. PHẦN TỬ BÊN TRONG SÂU HƠN */
+/* ============================= */
+
+/* p trong .box vẫn bị ảnh hưởng bởi selector hậu duệ */
+.box p {
+  background-color: hsl(210, 70%, 95%);
+  padding: 6px;
+}
+
+  </style>
+</head>
+<body>
+<div class="container"> 
+  <h1>CSS Selectors Demo - <a href="15imgs/kethua.jpg" target="_blank">Tính kế thừa</a></h1>
+
+  <p>Đây là đoạn văn ngay sau h1. - <a href="15imgs/lienke.jpg" target="_blank">Liền kề - E + F</a></p>
+
+  <section class="content">
+    <h2>Nội dung chính - <a href="15imgs/contructiep.jpg" target="_blank">Con trực tiếp - E > F</a></h2>
+
+    <p>Đoạn văn nằm trong content. - <a href="15imgs/haudue.jpg" target="_blank">Hậu duệ - E F</a></p>
+    <p>Đoạn văn thứ hai trong content.</p>
+
+    <div class="box">
+      <p>Đoạn văn nằm trong box. - <a href="15imgs/haudue.jpg" target="_blank">Hậu duệ - E F</a> -  p trong .box vẫn bị ảnh hưởng bởi selector hậu duệ</p>
+    </div>
+  </section>
+
+  <h2>Ghi chú</h2>
+  <p>Đoạn ghi chú 1  - <a href="15imgs/cungcap.jpg" target="_blank">Cùng cấp - E ~ F</a></p>
+  <p>Đoạn ghi chú 2  - <a href="15imgs/cungcap.jpg" target="_blank">Cùng cấp - E ~ F</a></p>
+</div>  
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+/* 1. Thiết lập màu cơ bản & kế thừa */
+body {
+font-family: Arial, sans-serif;
+color: rgb(50, 50, 50); /* RGB */
+}
+
+
+/* 2. Tiêu đề chính */
+h1 {
+color: #cc0000; /* HEX */
+}
+
+
+/* 3. Tiêu đề phụ */
+h2 {
+color: hsl(210, 70%, 45%); /* HSL */
+}
+
+
+/* 4. Selector liền kề */
+h1 + p {
+color: hsl(120, 50%, 40%);
+}
+
+
+/* 5. Selector hậu duệ */
+.content p {
+color: hsl(210, 60%, 35%);
+}
+
+
+/* 6. Selector con trực tiếp */
+.content > h2 {
+border-bottom: 2px solid hsl(210, 70%, 45%);
+}
+
+
+/* 7. Selector cùng cấp */
+h2 ~ p {
+font-style: italic;
+}
+
+
+/* 8. Nhấn mạnh */
+strong {
+color: green;
+}
+
+
+em {
+color: orange;
+font-style: italic;
+}
+
+
+/* PHÂN TÍCH
+1. Đoạn ngay sau h1 đổi màu vì selector h1 + p.
+2. p trong .content đổi màu do selector hậu duệ.
+3. E F và E > F giống nhau khi F luôn là con trực tiếp của E.
+*/
