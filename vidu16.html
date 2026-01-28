@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ví dụ tổng hợp bài 16</title>
+  <link rel="stylesheet" href="vidu16.css">
+</head>
+
+<body>
+
+<header id="home">
+  <h1>VÍ DỤ TỔNG HỢP BÀI 16</h1>
+  <p class="subtitle">Tổng hợp kiến thức CSS – Block, Inline, Box Model, Selector</p>
+</header>
+
+<section class="box">
+  <h2>1. Block & Inline</h2>
+
+  <p>
+    Đây là đoạn văn bản dạng <strong>block</strong>.
+    <span class="inline-demo">Inline 1</span>
+    <span class="inline-demo">Inline 2</span>
+    <span class="inline-demo">Inline 3</span>
+  </p>
+</section>
+
+<section class="box">
+  <h2>2. CSS Box Model</h2>
+  <div class="card">
+    <h3>Lịch sử CSS</h3>
+    <p>
+      CSS được đề xuất bởi <em>Håkon Wium Lie</em> vào năm 1994 khi làm việc
+      cùng Tim Berners-Lee tại CERN.
+    </p>
+  </div>
+</section>
+
+<section class="box">
+  <h2>3. CSS Selectors</h2>
+
+  <p class="test">Đây là đoạn test (class)</p>
+  <p class="warning">Đây là cảnh báo (class)</p>
+  <p class="test warning">Test + Warning (nhiều class)</p>
+
+  <a href="https://example.com" target="_blank">
+    Liên kết mở tab mới (attribute selector)
+  </a>
+</section>
+
+<section class="box">
+  <h2>4. Ẩn / Hiện phần tử</h2>
+
+  <p class="hidden">Đoạn này bị ẩn nhưng vẫn chiếm chỗ</p>
+  <p class="none">Đoạn này bị ẩn hoàn toàn</p>
+</section>
+
+<section class="box">
+  <h2>5. Bảng màu CSS</h2>
+
+  <table>
+    <caption>Bảng tên màu CSS</caption>
+    <tr>
+      <th>Tên màu</th>
+      <th>HEX</th>
+      <th>RGB</th>
+      <th>Hiển thị</th>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>#000000</td>
+      <td>rgb(0,0,0)</td>
+      <td style="background-color: rgb(0,0,0);"></td>
+    </tr>
+    <tr>
+      <td>Red</td>
+      <td>#FF0000</td>
+      <td>rgb(255,0,0)</td>
+      <td style="background-color: rgb(255,0,0);"></td>
+    </tr>
+  </table>
+</section>
+
+<footer>
+  <p>© 2026 – CSS Portfolio Demo</p>
+</footer>
+
+</body>
+</html>
