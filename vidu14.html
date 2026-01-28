@@ -59,19 +59,20 @@
 
         /* 6. Ví dụ tính kế thừa */
         .box {
-            color: purple;
-            border: 1px solid gray;
+            color: #ff00c3;
+            border: 5px solid #c4df00;
             padding: 10px;
         }
 
         /* 7. Ví dụ cascading */
-        p {
+        /*p {
             color: black;
         }
+        
 
         p {
-            color: darkslategray;
-        }
+            color: #170c72;
+        }*/
 
         /* 8. Ví dụ dấu * */
         * {
@@ -83,6 +84,15 @@
             color: red !important;
         }
 
+        /*
+        !important
+            ↓
+        Quy tắc viết sau
+            ↓
+        Quy tắc cụ thể
+            ↓
+            *
+        */
     </style>
 </head>
 
@@ -114,8 +124,9 @@
     <div class="box">
         <p>
             Đoạn văn này nằm trong thẻ div có class <strong>box</strong>,
-            nên sẽ <em>kế thừa màu chữ tím</em> từ phần tử cha.
+            nên sẽ kế thừa màu chữ hồng từ phần tử cha.
         </p>
+   
 
         <p class="important-text">
             Đoạn văn này có thuộc tính <strong>!important</strong> nên
